@@ -1,0 +1,28 @@
+[
+	{
+		"label": "New source file",
+		"command": "printf 'Enter date as yyyy-mm-dd: ' && read -r date && cp -vn src/bin/template.rs src/bin/${date}.rs",
+		"reveal": "always",
+		"reveal_target": "center",
+		"hide": "on_success"
+	},
+	{
+		"label": "New input file",
+		"command": "printf 'Enter date as yyyy-mm-dd: ' && read -r date && echo Enter input followed by Ctrl-D && cat > inputs/${date}.txt",
+		"reveal": "always",
+		"reveal_target": "center",
+		"hide": "on_success"
+	},
+	{
+		"label": "Run today's solution with input",
+		"command": "date=$(date '+%Y-%m-%d') && cargo run --bin ${date} < inputs/${date}.txt",
+		"reveal": "always",
+		"hide": "never"
+	},
+	{
+		"label": "Run today's solution",
+		"command": "date=$(date '+%Y-%m-%d') && cargo run --bin ${date}",
+		"reveal": "always",
+		"hide": "never"
+	}
+]
