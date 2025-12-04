@@ -24,5 +24,10 @@
 		"command": "date=$(date '+%Y-%m-%d') && cargo run --bin ${date}",
 		"reveal": "always",
 		"hide": "never"
+	},
+	{
+		"label": "Commit & push today's solution",
+		"command": "jj commit -m $(date '+%Y-%m-%d') && jj b m master -t @- && jj git push",
+		"reveal": "no_focus"
 	}
 ]
