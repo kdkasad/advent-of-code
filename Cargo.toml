@@ -3,7 +3,8 @@ name = "advent-of-code"
 version = "0.0.0"
 edition = "2024"
 
-[dependencies]
-
 [dev-dependencies]
 pretty_assertions = "1.4.1"
+
+[dependencies]
+rangemap = "1.7.0"
