@@ -4,14 +4,14 @@ use advent_of_code::Solution;
 
 struct Problem;
 impl<'a> Solution<'a> for Problem {
-    type Output = &'a str;
+    type Output = u64;
 
     fn part1(input: &'a str) -> Self::Output {
-        ""
+        0
     }
 
     fn part2(input: &'a str) -> Self::Output {
-        ""
+        0
     }
 }
 
