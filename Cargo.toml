@@ -7,4 +7,5 @@ edition = "2024"
 pretty_assertions = "1.4.1"
 
 [dependencies]
+bitvec = "1.0.1"
 rangemap = "1.7.0"
