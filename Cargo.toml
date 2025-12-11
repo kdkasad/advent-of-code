@@ -8,4 +8,5 @@ pretty_assertions = "1.4.1"
 
 [dependencies]
 bitvec = "1.0.1"
+memoize = "0.5.1"
 rangemap = "1.7.0"
